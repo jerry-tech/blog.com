@@ -1,0 +1,156 @@
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top:10px;
+  text-align:center;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:black;
+  font-weight:bold;
+}
+
+/*styling for side nav*/
+.subprofile{
+    background: white;
+    width:100%;
+    margin:auto;
+}
+.subprofile>h3{
+    float:right;
+}
+.avatar{
+     clear:both;
+}
+.images>img{
+   width:50%;
+   border-radius:10px;
+   opacity: 0.7;
+   padding-bottom: 1%;
+   height:400px;
+   box-shadow:2px 2px 2px black;
+    
+}
+.imgcont{
+   /*border-bottom: 2px solid black;*/ 
+}
+#userinfo{
+    display:flex;
+    margin: auto;
+    border:1px solid black;
+    justify-content: center;
+    background: whitesmoke;
+    box-sizing: border-box;
+}
+
+#legends>li{
+    text-align: justify;padding:5px;
+}
+#data>li{
+    text-align: justify;
+    padding:5px;
+}
+#data{
+    padding-left: 5%;
+   
+}
+#edit,#image{
+    border:none;
+    background: rgba(23, 54, 230, 0.795);
+    padding:5px 5px;
+    color:white;
+    font-size:130%;
+    border-radius: 10px;
+    width:50%;
+    margin-top:2%;
+    margin-bottom: 2%;
+    cursor:pointer;
+}
+#edit,#image:hover{
+    opacity:0.8;
+    color:rgba(23, 54, 230, 0.795);
+    background:white;
+border:2px solid rgba(23, 54, 230, 0.795);  
+}
+@media screen and (max-width: 750px) {
+    .images>img{
+        width:65%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .images>img{
+        width:70%;
+    }
+    .subprofile{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .images>img{
+        width:70%;
+        margin: 0px;
+    }
+    .subprofile>h3{
+    float:none;
+     }
+     .subprofile{
+         margin:0px;
+     
+     }
+       #userinfo{
+       
+       margin:0px;
+    }
+       
+}
+/*----------------------------------------------*/
+#userspost{
+    display:none;
+}
+#postopt{
+    display:flex;
+    list-style-type: none;  
+    box-sizing: border-box;
+}
+#postopt>li{
+    padding:1%;
+    border-left:1px solid black;
+}
+.post_sub{
+    padding: 6%;
+    background: whitesmoke;
+}
+#post_text{
+    width:50%;
+    height:160px;
+}
+.post_sub>p{
+    padding-bottom: 10px;
+    font-weight:bold;
+}
+@media screen and (max-width: 1000px)
+{
+    #post_text{
+        width:100%;
+    }
+}
+
+
+@media sreen and (max-width: 290px)
+{
+    #postopt{
+        display: block;
+    }
+}

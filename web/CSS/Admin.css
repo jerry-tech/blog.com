@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 19, 2019, 3:18:20 PM
+    Author     : USER
+*/
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: monospace;
+} 
+  
+#Records {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+#Records td, #Records th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Records tr:nth-child(even){background-color: #f2f2f2;}
+
+#Records tr:hover {background-color: #ddd;}
+
+#Records th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(23, 54, 230, 0.795);
+  color: white;
+  font-weight:bold;
+  font-size: 140%;
+}
+#dropdown{
+    padding:10px 35px;
+}
+#formselect{
+  float:right;
+  padding:2%;
+  align-items: baseline;
+}
+#updatein,#deletein{
+    padding:5px 5px;
+    background:rgba(23, 54, 230, 0.795); 
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+#updatein:hover{
+   color:rgba(23, 54, 230, 0.795); 
+   background: white;
+}
+#deletein:hover{
+    color:rgba(23, 54, 230, 0.795); 
+   background: white;
+}
+#selecty{
+     padding:10px 10px;
+    background:rgba(23, 54, 230, 0.795); 
+    border:none; 
+    color:white;
+    cursor: pointer;
+}
+

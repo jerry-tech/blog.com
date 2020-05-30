@@ -1,0 +1,141 @@
+
+/* Full-width input fields */
+input[type=text] {
+    width: 30%;
+    height:60px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: monospace;
+    
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: rgb(99, 76, 175);
+    color: white;
+    /* padding:10px 10px; */
+    border: none;
+    cursor: pointer;
+    width: 14%;
+    font-family: monospace;
+    height:45px;
+    
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    padding: 50px;
+  }
+  #postcom{
+    display:flex;
+    align-items: baseline;
+  }
+
+  /* The Modal (background) */
+  .modal1{
+    /* display: none; Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.315); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content1{
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    font-family: monospace;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+#comment2{
+    background:whitesmoke;
+    color:black;
+}
+#modify{
+    display:flex;
+    list-style-type: none;
+}
+#modify>a{
+    padding:5px;
+}
+#modify>a:hover{
+    text-decoration: underline;
+}
+#comment2{
+    padding:3%;
+}
+#comment2>p{
+    margin-top: 6px;
+}
+#postmain2{
+    margin-bottom: 13px;
+   border-bottom:5px solid whitesmoke;
+}
+#postmain2>p{
+    line-height: 1.8;
+    font-weight:bold;
+   
+}
+#postmain1{
+    margin-bottom: 40px;
+    border-bottom:5px solid whitesmoke;
+    color:black;
+    width:100%;
+}
+.container1{
+    margin:20px;
+}
+@media screen and (max-width:940px){
+    .modal-content1{
+        width:100%;
+    }
+}
+@media screen and (max-width:600px){
+ 
+}
+  

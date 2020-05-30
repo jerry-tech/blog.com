@@ -1,0 +1,172 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    color:white;
+    font-family:monospace;
+}
+#title{
+    padding-left: 20%;
+}
+#title h2{
+     font-size:220%;
+     font-style:italic;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] ,input[type= email]{
+  width: 70%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-weight: bolder;
+  font-family: monospace;
+  border-radius: 20px;
+  color:black;
+}
+input[type=number]
+{
+  width: 50%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-weight: bolder;
+  font-family: monospace;
+  border-radius: 20px;
+  color:black;
+}
+#cont{
+    border-right:1px solid whitesmoke; 
+    /*box-shadow: 2px 0px 2px 0px white;*/
+    width:45%;
+    /*float:left;*/
+}
+/* Set a style for all buttons */
+#submit {
+  background-color: rgba(23, 54, 230, 0.795);
+  color: white;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 130%;
+  border-radius:50px;
+}
+
+#submit:hover {
+  color: rgba(23, 54, 230, 0.795);
+  background: white;
+}
+
+.container {
+  padding: 25px;
+  padding-left: 10%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  opacity: 0.7;
+  /* padding-top: 60px; */
+  
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 1.5s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+body{
+    display: flex;
+}
+
+#contright{
+  background: rgba(206, 133, 181, 0.534);
+  width:54.8%;
+  margin-left: 45%;
+  position:fixed;
+  height:100%;
+}
+#element{
+  display: flex;
+  margin-top: 40%;
+  animation: mymove 6s infinite;
+  animation-timing-function: ease-in;
+ padding-left: 20%;
+}
+
+#element>p{
+  animation-delay: 10s;
+  
+}
+#element>p{
+  font-size: 380%;
+  font-family: monospace;
+  font-weight: bold;
+  padding:1%;
+  text-align: center;
+}
+
+ @keyframes mymove 
+ {
+  from {opacity:0.2;}
+  to {opacity:1;}
+}
+
+@media screen and (max-width:795px){
+    #element{
+        display: block;
+        margin-top:2px;
+    }
+    input[type=text],input[type=email],input[type=password]
+    {
+        width:270px;
+    }
+}
+@media screen and (max-width:700px){
+    #contright{
+        display:none;
+    }
+    #cont{
+        width:78%;
+    }
+}
+@media screen and (max-width:700px){
+    #cont{
+        width:100%;
+    }
+}
+@media screen and (max-width:320px){
+   input[type=text],input[type=email],input[type=password]
+    {
+        width:85%;
+    }
+    #submit{
+        width:80px;
+    }
+}
