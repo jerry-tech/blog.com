@@ -20,7 +20,8 @@ activation.jar,
 pop3.jar 1.6.2,
 logging-mailhandler.jar 1.6.2,
 gimap.jar 1.6.2,
-imap.jar 1.6.2
+imap.jar 1.6.2,
+Font-awesome
 
 # Database
 Ms sql server 2014
